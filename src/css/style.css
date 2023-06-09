@@ -41,6 +41,13 @@ header{
     font-weight: 300;
 }
 
+.logo:hover,
+li:hover{
+    cursor: pointer;
+    scale: 1.05;
+    transition: 0.3s ease-in-out;
+}
+
 @media (max-width:768px) {
     header, .menu ul{
         flex-direction: column;
