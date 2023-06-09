@@ -5,12 +5,12 @@
     font-size: 15px;
 }
 
-header, .logo, .menu ul{
+.header, .logo, .menu ul{
     display: flex;
     align-items: center;
 }
 
-header{
+.header{
     justify-content: space-between;
     padding: 45px;
 }
@@ -20,44 +20,51 @@ header{
     margin-right: 6px;
 }
 
-.logo p{
+.logo .nome-do-banco{
+    color: black;
     font-size: 20px;
     font-weight: 800;
 }
 
 .menu ul{
-    gap: 30px;
+    gap: 10px;
 }
 
-.destaque{
-    color: white;
+.menu li a{
+    padding: 10px 5px;
+}
+
+ul .destaque{
+    color: #fff;
     background-color: var(--cor-de-destaque);
     padding: 11px 6px;
 }
 
-.destaque.cadastro{
+ul li .cadastro{
+    background-color: var(--cor-de-destaque);
+    color: #fff;
     border-radius: 10px;
     padding: 10px 21px;
     font-weight: 300;
 }
 
-.logo:hover,
-li:hover{
-    cursor: pointer;
-    scale: 1.05;
+.menu li a:hover{
+    background-color: var(--cor-de-destaque);
+    color: #fff;
     transition: 0.3s ease-in-out;
 }
 
 @media (max-width:768px) {
-    header, .menu ul{
+    .header, .menu ul{
         flex-direction: column;
+        
     }
 
     .logo{
         margin-bottom: 100px;
     }
 
-    .logo p{
+    .logo .nome-do-banco{
         font-size: 40px;
     }
 
