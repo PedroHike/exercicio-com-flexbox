@@ -1,0 +1,68 @@
+  @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;800&display=swap');
+
+*{
+    font-family: "Public Sans";
+    font-size: 15px;
+}
+
+header, .logo, .menu ul{
+    display: flex;
+    align-items: center;
+}
+
+header{
+    justify-content: space-between;
+    padding: 45px;
+}
+
+.logo img{
+    width: 45px;
+    margin-right: 6px;
+}
+
+.logo p{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.menu ul{
+    gap: 30px;
+}
+
+.destaque{
+    color: white;
+    background-color: var(--cor-de-destaque);
+    padding: 11px 6px;
+}
+
+.destaque.cadastro{
+    border-radius: 10px;
+    padding: 10px 21px;
+    font-weight: 300;
+}
+
+@media (max-width:768px) {
+    header, .menu ul{
+        flex-direction: column;
+    }
+
+    .logo{
+        margin-bottom: 100px;
+    }
+
+    .logo p{
+        font-size: 40px;
+    }
+
+    .menu ul{
+        gap: 50px;
+    }
+
+    .menu ul li{
+        font-size: 40px;
+    }
+
+    .menu .cadastro{
+        font-size: 18px;
+    }
+}
