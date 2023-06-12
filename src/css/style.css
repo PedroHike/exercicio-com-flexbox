@@ -72,7 +72,7 @@ ul li .cadastro{
         gap: 50px;
     }
 
-    .menu ul li{
+    .menu ul li a{
         font-size: 40px;
     }
 
